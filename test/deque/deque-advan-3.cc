@@ -77,10 +77,10 @@ bool check2(){ // test insert erase
             Q.push_front(t); stdQ.push_front(t);
         }
     }
-    int n = 42000;
+    int n = 30000;
     sjtu::deque<int>::iterator it;
     std::deque<int>::iterator stdit;
-    for(int i = 1; i <= 6666; i++){
+    for(int i = 1; i <= 100; i++){
         it = Q.begin(); stdit = stdQ.begin();
         int x = rand() % n;
         it += x; stdit += x;
@@ -91,7 +91,7 @@ bool check2(){ // test insert erase
         }
         else if(*it != *stdit) return 0;
     }
-    for(int i = 1; i <= 6666; i++){
+    for(int i = 1; i <= 100; i++){
         it = Q.begin(); stdit = stdQ.begin();
         int x = rand() % n;
         it += x; stdit += x;
